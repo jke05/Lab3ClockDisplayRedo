@@ -1,25 +1,24 @@
-Project: clock-display
-Authors: David Barnes and Michael Kölling
+Part II : Clock Display Project
 
-This project is part of the material for the book
+21. It starts at 0, because when you create the two number displays, the value is set to 0
 
-   Objects First with Java - A Practical Introduction using BlueJ
-   Seventh edition
-   David J. Barnes and Michael Kölling
+23. Call timeTick 60 times or use setTime() to set it to one hour
 
-It is discussed in chapter 3.
+24. NumberDisplay digit = new NumberDisplay(10);
 
-To use this project, create an instance of class ClockDisplay. Then inspect this 
-instance and leave the object inspector window open. With the inspector window open, 
-call the object's methods, such as timeTick and setTime. Watch the 
-"displayString" in the inspector.
+25. Rectangle window = new Rectangle(int length, int width);  ex: (20, 10);
 
-The displayString field simulates the actual clock display device. Were this 
-program running in a real clock, it would change the real, physical display 
-hardware instead of this string. The timeTick method would be triggered once 
-every minute by some timer hardware.
+26. When creating a clock display, it lets you put what time you want it to be at when creating it
 
-Everything else could be pretty much the same.
+27. Theres no update display because the hours and minutes displays are already declared.
 
+28. public void print(String filename, boolean doubleSided){
+        System.out.println(filename + doubleSided);
+    }
 
-Note: This project does not implement adequate handling of errors.
+    public int getStatus(int delay){
+        return status;
+    }
+    
+29. Square, Triangle, Circle, Person
+

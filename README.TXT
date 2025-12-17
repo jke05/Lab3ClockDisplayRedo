@@ -22,3 +22,13 @@ Part II : Clock Display Project
     
 29. Square, Triangle, Circle, Person
 
+30. changeSize();
+    moveHorizontal();
+    moveVertical();
+    makeVisible();
+    
+31. Yes
+
+32. 8 % 3 = 2
+
+33. It gives a negative number

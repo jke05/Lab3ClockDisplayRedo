@@ -18,16 +18,25 @@ public class ClockDisplay
     private NumberDisplay minutes;
     private String displayString;    // simulates the actual display
     
+    public ClockDisplay(){
+        long millis = System.currentTimeMillis();
+        long seconds = millis / 1000;
+        // use a ‘cast’ to convert long integers to int.
+        int currentMinutes = (int) (seconds / 60 % 60);
+        int currentHours = (int) (seconds / (60 * 60) % 24);
+    }
+    
     /**
      * Constructor for ClockDisplay objects. This constructor 
      * creates a new clock set at 00:00.
-     */
-    public ClockDisplay()
-    {
-        hours = new NumberDisplay(24);
-        minutes = new NumberDisplay(60);
-        updateDisplay();
-    }
+     *
+    *public ClockDisplay()
+    *{
+    *    hours = new NumberDisplay(24);
+    *    minutes = new NumberDisplay(60);
+    *    updateDisplay();
+    *}
+    */
 
     /**
      * Constructor for ClockDisplay objects. This constructor
